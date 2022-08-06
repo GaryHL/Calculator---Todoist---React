@@ -4,6 +4,7 @@ import '../calculadora/calculadora.scss'
 import Pantalla from './pantalla/Pantalla'
 import Btn_clear from './btn clear/Btn_clear'
 import {useState} from 'react'
+import {evaluate} from 'mathjs';
 
 function Calculadora () {
     
@@ -12,6 +13,9 @@ function Calculadora () {
         setInput(input + val);
     }
 
+    const calcularResultado = () => {
+        setInput(evaluate(input))
+    }
   return (
     <div className="container_calculator">
         <Pantalla input={input}/>
@@ -34,12 +38,14 @@ function Calculadora () {
             <Btn_calculator manejarClick={agregarInput}>*</Btn_calculator>
         </div>
         <div className="fila">
-            <Btn_calculator manejarClick={agregarInput}>=</Btn_calculator>
+            <Btn_calculator manejarClick={calcularResultado}>=</Btn_calculator>
             <Btn_calculator manejarClick={agregarInput}>0</Btn_calculator>
             <Btn_calculator manejarClick={agregarInput}>.</Btn_calculator>
             <Btn_calculator manejarClick={agregarInput}>/</Btn_calculator>
         </div>
-        <div className="fila"> <Btn_clear/></div>
+        <div className="fila"> 
+        <Btn_clear manejarClear={() => setInput("")}/>
+        </div>
        
 
 
