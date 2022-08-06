@@ -1,0 +1,14 @@
+.container_calculator{
+    width:45vh;
+    height:65vh;
+    padding:4vh;
+    background-color:rgb(45, 68, 131);
+    border-radius:2vh;
+    border: 5px solid;
+    .fila{
+        margin:0.5vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+}

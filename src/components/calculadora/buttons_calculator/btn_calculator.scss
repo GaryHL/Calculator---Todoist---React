@@ -1,0 +1,20 @@
+.btn-container{
+    height:8vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 2vh;
+    background-color:greenyellow;
+    color:white;
+    border:solid 2px white;
+    margin: 0.6vh;
+    cursor:pointer;
+    user-select:none;
+    flex:1 1;
+    &:hover{
+        background-color:black;
+    }
+}
+.operador{
+    background-color: rgb(185, 60, 29);
+}

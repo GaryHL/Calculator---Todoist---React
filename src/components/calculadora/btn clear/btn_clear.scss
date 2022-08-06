@@ -1,0 +1,13 @@
+.btn_clear{
+    height:4vh;
+    font-size:2vh;
+    display:flex;
+    flex:1;
+    background-color:gray;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    &:hover{
+        background-color:rgb(66, 66, 66);
+    }
+}
