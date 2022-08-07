@@ -1,0 +1,13 @@
+.list-principal-todo{
+    display:flex;
+    min-width:40%;
+    min-height:50vh;
+    background-color:green;
+    border-radius:2vh;
+    justify-content:center;
+
+    h1{
+        color:white;
+        font-size:4vh;
+    }
+}
